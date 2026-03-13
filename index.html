@@ -1,0 +1,1145 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <title>DIAN Estampados y DTF | Estampados Personalizados de Calidad</title>
+  <meta name="description" content="Emprendimiento especializado en estampados personalizados DTF. Polos, poleras y camisetas con diseños únicos. Calidad y rapidez.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* RESET Y ESTILOS BASE MEJORADOS PARA RESPONSIVE */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      overflow-x: hidden;
+      width: 100%;
+      background-color: #fafafa;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+    }
+
+    .resaltado {
+      color: #e20505;
+      position: relative;
+    }
+
+    /* HEADER MEJORADO */
+    header {
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      width: 100%;
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    .logo-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .logo-text h1 {
+      font-size: 1.5rem;
+      line-height: 1.2;
+      color: #f30404;
+    }
+
+    .logo-subtitle {
+      font-size: 0.7rem;
+      color: #666;
+    }
+
+    /* MENÚ MÓVIL MEJORADO */
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.8rem;
+      color: #e01111;
+      cursor: pointer;
+      padding: 5px;
+    }
+
+    .nav-menu ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s;
+      padding: 5px 0;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: #ec0000;
+    }
+
+    .btn-whatsapp {
+      background: #25D366;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: transform 0.3s;
+      font-size: 0.9rem;
+    }
+
+    .btn-whatsapp:hover {
+      transform: scale(1.05);
+    }
+
+    .whatsapp-btn-mobile {
+      display: none;
+    }
+
+    /* HERO MEJORADO */
+    .hero {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .hero-content h2 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .hero-description {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary, .btn-secondary {
+      padding: 12px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s;
+      display: inline-block;
+    }
+
+    .btn-primary {
+      background: #ff0000;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #d10909;
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: #e91515;
+      border: 2px solid #d30b0b;
+    }
+
+    .btn-secondary:hover {
+      background: #e70808;
+      color: white;
+    }
+
+    .hero-image img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    /* NOSOTROS MEJORADO */
+    .nosotros {
+      max-width: 1200px;
+      margin: 80px auto;
+      padding: 0 20px;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-header h2 {
+      font-size: clamp(2rem, 4vw, 2.5rem);
+      margin-bottom: 10px;
+    }
+
+    .section-subtitle {
+      color: #666;
+      font-size: 1.1rem;
+    }
+
+    .nosotros-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .nosotros-text h3 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      line-height: 1.3;
+    }
+
+    .nosotros-text p {
+      color: #666;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .feature {
+      text-align: center;
+    }
+
+    .feature i {
+      font-size: 2rem;
+      color: #e91111;
+      margin-bottom: 10px;
+    }
+
+    .feature span {
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .nosotros-image img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    /* CATÁLOGO MEJORADO */
+    .catalogo {
+      max-width: 1200px;
+      margin: 80px auto;
+      padding: 0 20px;
+    }
+
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 25px;
+      margin: 40px 0;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-image {
+      position: relative;
+      height: 250px;
+      overflow: hidden;
+    }
+
+    .card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .card-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .card:hover .card-overlay {
+      opacity: 1;
+    }
+
+    .btn-overlay {
+      background: #d60a0a;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .card-description {
+      color: #666;
+      font-size: 0.9rem;
+      line-height: 1.5;
+      margin-bottom: 15px;
+    }
+
+    .card-price {
+      margin-bottom: 15px;
+    }
+
+    .price {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #bd0909;
+      display: block;
+    }
+
+    .price-note {
+      font-size: 0.8rem;
+      color: #999;
+    }
+
+    .btn-card {
+      display: block;
+      background: #25D366;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .btn-card:hover {
+      background: #128C7E;
+    }
+
+    .catalogo-cta {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .catalogo-cta p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    /* CONTACTO MEJORADO - CORREGIDO */
+    .contacto {
+      max-width: 1200px;
+      margin: 80px auto;
+      padding: 0 20px;
+    }
+
+    .contacto-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+
+    .contacto-info {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    .contact-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+      padding: 15px;
+      background: #f8f9fa;
+      border-radius: 15px;
+      transition: transform 0.3s;
+    }
+
+    .contact-card:hover {
+      transform: translateX(5px);
+    }
+
+    .contact-icon {
+      width: 50px;
+      height: 50px;
+      background: #e20505;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.3rem;
+      flex-shrink: 0;
+    }
+
+    .contact-details h3 {
+      font-size: 1.1rem;
+      margin-bottom: 5px;
+    }
+
+    .contact-details a {
+      color: #333;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact-note {
+      font-size: 0.8rem;
+      color: #999;
+      margin-top: 5px;
+    }
+
+    .contact-social {
+      margin-top: 20px;
+    }
+
+    .contact-social p {
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .social-icons {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .social-icons a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #333;
+      text-decoration: none;
+      padding: 10px 15px;
+      background: #f8f9fa;
+      border-radius: 30px;
+      transition: all 0.3s;
+    }
+
+    .social-icons a:hover {
+      background: #dd0606;
+      color: white;
+    }
+
+    .social-icons a i {
+      font-size: 1.3rem;
+      width: 25px;
+    }
+
+    /* FORMULARIO MEJORADO */
+    .contact-form {
+      background: #f8f9fa;
+      padding: 30px;
+      border-radius: 20px;
+    }
+
+    .contact-form h3 {
+      font-size: 1.5rem;
+      margin-bottom: 25px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 15px;
+      border: 2px solid #e0e0e0;
+      border-radius: 10px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.95rem;
+      transition: border-color 0.3s;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: #e91313;
+    }
+
+    .contact-form button {
+      width: 100%;
+      padding: 15px;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* WHATSAPP FLOTANTE */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #25D366;
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      text-decoration: none;
+      box-shadow: 0 5px 20px rgba(37, 211, 102, 0.3);
+      transition: transform 0.3s;
+      z-index: 999;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+    }
+
+    /* FOOTER MEJORADO - SIN HTML */
+    footer {
+      background: #1a1a1a;
+      color: white;
+      padding: 60px 20px 20px;
+      margin-top: 80px;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
+
+    .footer-logo h2 {
+      color: #f70a0a;
+      margin-bottom: 5px;
+    }
+
+    .footer-logo p {
+      color: #999;
+    }
+
+    .footer-links h3,
+    .footer-contact h3 {
+      color: white;
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+    }
+
+    .footer-links ul {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 10px;
+    }
+
+    .footer-links a {
+      color: #999;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-links a:hover {
+      color: #e40a0a;
+    }
+
+    .footer-contact p {
+      color: #999;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 40px auto 0;
+      padding-top: 20px;
+      border-top: 1px solid #333;
+      text-align: center;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    .footer-note {
+      margin-top: 10px;
+      font-size: 0.8rem;
+    }
+
+    /* MEDIA QUERIES PARA RESPONSIVE */
+    @media (max-width: 1024px) {
+      .productos {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-menu {
+        width: 100%;
+        display: none;
+      }
+
+      .nav-menu.active {
+        display: block;
+        margin-top: 20px;
+      }
+
+      .nav-menu ul {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 0;
+      }
+
+      .whatsapp-btn-mobile {
+        display: block;
+      }
+
+      .desktop {
+        display: none;
+      }
+
+      .hero,
+      .nosotros-content,
+      .contacto-content {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-content {
+        order: 1;
+      }
+
+      .hero-image {
+        order: 2;
+      }
+
+      .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .features {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+      }
+
+      .contacto-content {
+        padding: 20px;
+      }
+
+      .social-icons a {
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .productos {
+        grid-template-columns: 1fr;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+      }
+
+      .hero-buttons a {
+        text-align: center;
+      }
+
+      .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+        bottom: 20px;
+        right: 20px;
+      }
+    }
+
+    /* ANIMACIONES SUAVES */
+    .fade-in {
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <div class="logo-img">
+          <img src="Imagen de WhatsApp 2025-09-03 a las 22.40.16_8f9b3431.jpg" alt="DIAN Estampados y DTF">
+        </div>
+        <div class="logo-text">
+          <h1 class="anim-title">DIAN</h1>
+          <p class="logo-subtitle">Estampados y DTF</p>
+        </div>
+      </div>
+      
+      <button class="menu-toggle" aria-label="Abrir menú">
+        <i class="fas fa-bars"></i>
+      </button>
+      
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+          <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+          <li><a href="#catalogo" class="nav-link">Catálogo</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+          <li class="whatsapp-btn-mobile">
+            <a href="https://wa.me/51940699545" target="_blank" class="btn-whatsapp">
+              <i class="fab fa-whatsapp"></i> Pedir cotización
+            </a>
+          </li>
+        </ul>
+      </nav>
+      
+      <a href="https://wa.me/51940699545" target="_blank" class="btn-whatsapp desktop">
+        <i class="fab fa-whatsapp"></i> Pedir cotización
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="hero">
+    <div class="hero-content fade-in">
+      <h2>Imprime tu <span class="resaltado">estilo</span> en cada prenda</h2>
+      <p class="hero-description">Tu emprendimiento de confianza en estampados personalizados y tecnología DTF. 
+        Llevamos tus ideas a tus prendas con la mejor calidad, durabilidad y atención personalizada.</p>
+      <div class="hero-buttons">
+        <a href="#catalogo" class="btn-primary">Ver Catálogo</a>
+        <a href="#contacto" class="btn-secondary">Contactar</a>
+      </div>
+    </div>
+    <div class="hero-image slide-in-right">
+      <div class="image-container">
+        <img src="EJEMPLO.jpg" alt="Ejemplo de estampado DTF personalizado">
+      </div>
+    </div>
+  </section>
+
+  <!-- Nosotros -->
+  <section id="nosotros" class="nosotros">
+    <div class="section-header slide-in-left">
+      <h2>Sobre <span class="resaltado">Nosotros</span></h2>
+      <p class="section-subtitle">Conoce nuestra pasión por el estampado</p>
+    </div>
+    
+    <div class="nosotros-content">
+      <div class="nosotros-text slide-in-left">
+        <h3>Más que estampados, <span class="resaltado">creamos identidad</span></h3>
+         <p>Soy un emprendedor con un sueño: salir adelante ofreciendo productos de calidad que representen fielmente lo que mis clientes quieren expresar. Cada diseño que sale de mi, lleva dedicación, esfuerzo y las ganas de crecer día a día para convertir este negocio en algo grande.</p>
+    <p>Me enorgullece ofrecer diseños 100% personalizados en polos, poleras, sudaderas y mucho más, utilizando materiales de primera calidad y técnicas de vanguardia que garantizan durabilidad y colores vibrantes. Porque cuando tú confías en mí para crear tu diseño, no solo estampas una prenda: estampas tu esencia, tu marca o ese detalle único que tienes en mente.</p>
+    <p>Cada cliente que confía en mi trabajo es un paso más hacia ese gran negocio que quiero construir. Y lo haremos juntos, con calidad, con esfuerzo y con el corazón puesto en cada estampado.</p>
+        <div class="features">
+          <div class="feature">
+            <i class="fas fa-bolt"></i>
+            <span>Envíos rápidos</span>
+          </div>
+          <div class="feature">
+            <i class="fas fa-palette"></i>
+            <span>Diseños personalizados</span>
+          </div>
+          <div class="feature">
+            <i class="fas fa-award"></i>
+            <span>Calidad garantizada</span>
+          </div>
+        </div>
+      </div>
+      <div class="nosotros-image zoom-in">
+        <div class="image-frame">
+          <img src="diseño7.PNG" alt="Proceso de estampado DTF">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catálogo -->
+  <section id="catalogo" class="catalogo">
+    <div class="section-header">
+      <h2>Nuestro <span class="resaltado">Catálogo</span></h2>
+      <p class="section-subtitle">Productos destacados con estampados personalizados</p>
+    </div>
+    
+    <div class="productos">
+      <!-- POLO 20/1: PECHO Y ESPALDA - 30 SOLES -->
+      <div class="card">
+        <div class="card-image">
+          <img src="DISEÑO1.PNG" alt="Polo 20/1 personalizado">
+          <div class="card-overlay">
+            <button class="btn-overlay" data-product="polo-20-1">Ver detalles</button>
+          </div>
+        </div>
+        <div class="card-content">
+          <h3>Polo 20/1 Personalizado</h3>
+          <p class="card-description">Polo de algodón 20/1 con estampado <strong>pecho y espalda</strong>. Ideal para diseños que resalten.</p>
+          <div class="card-price">
+            <span class="price">S/ 30.00</span>
+            <span class="price-note">(Personalización incluida)</span>
+          </div>
+          <a href="https://wa.me/51940699545?text=Hola,%20estoy%20interesado%20en%20el%20POLO%2020/1%20con%20estampado%20pecho%20y%20espalda%20(S/30)" target="_blank" class="btn-card">
+            <i class="fab fa-whatsapp"></i> Pedir ahora
+          </a>
+        </div>
+      </div>
+      
+      <!-- POLO 30/1: PECHO Y ESPALDA - 25 SOLES -->
+      <div class="card">
+        <div class="card-image">
+          <img src="diseño2.PNG" alt="Polo 30/1 personalizado">
+          <div class="card-overlay">
+            <button class="btn-overlay" data-product="polo-30-1">Ver detalles</button>
+          </div>
+        </div>
+        <div class="card-content">
+          <h3>Polo 30/1 Personalizado</h3>
+          <p class="card-description">Polo de algodón 30/1, suave y fresco. Estampado incluido en <strong>pecho y espalda</strong>.</p>
+          <div class="card-price">
+            <span class="price">S/ 25.00</span>
+            <span class="price-note">(Personalización incluida)</span>
+          </div>
+          <a href="https://wa.me/51940699545?text=Hola,%20estoy%20interesado%20en%20el%20POLO%2030/1%20con%20estampado%20pecho%20y%20espalda%20(S/25)" target="_blank" class="btn-card">
+            <i class="fab fa-whatsapp"></i> Pedir ahora
+          </a>
+        </div>
+      </div>
+      
+      <!-- POLO BODY SIMPLE CON SUBLIMADO - 8 SOLES -->
+      <div class="card">
+        <div class="card-image">
+          <img src="c26da9c98dfe2a12f675890308aef2f2.jpg" alt="Polo Body Simple sublimado">
+          <div class="card-overlay">
+            <button class="btn-overlay" data-product="polo-body-simple">Ver detalles</button>
+          </div>
+        </div>
+        <div class="card-content">
+          <h3>Polo Body Simple Sublimado</h3>
+          <p class="card-description">Polo body simple, ideal para sublimación. <strong>Estampado completo incluido</strong>.</p>
+          <div class="card-price">
+            <span class="price">S/ 8.00</span>
+            <span class="price-note">(Polo + Sublimado)</span>
+          </div>
+          <a href="https://wa.me/51940699545?text=Hola,%20estoy%20interesado%20en%20el%20POLO%20BODY%20SIMPLE%20con%20sublimado%20(S/8)" target="_blank" class="btn-card">
+            <i class="fab fa-whatsapp"></i> Pedir ahora
+          </a>
+        </div>
+      </div>
+      
+      <!-- POLERAS PERSONALIZADAS: PECHO Y ESPALDA - 45 SOLES -->
+      <div class="card">
+        <div class="card-image">
+          <img src="polera1.PNG" alt="Polera personalizada">
+          <div class="card-overlay">
+            <button class="btn-overlay" data-product="poleras">Ver detalles</button>
+          </div>
+        </div>
+        <div class="card-content">
+          <h3>Polera Personalizada</h3>
+          <p class="card-description">Prenda abrigada con estampado <strong>pecho y espalda</strong>. Diseño personalizado.</p>
+          <div class="card-price">
+            <span class="price">S/ 45.00</span>
+            <span class="price-note">(Personalización incluida)</span>
+          </div>
+          <a href="https://wa.me/51940699545?text=Hola,%20estoy%20interesado%20en%20las%20POLERAS%20personalizadas%20con%20estampado%20pecho%20y%20espalda%20(S/45)" target="_blank" class="btn-card">
+            <i class="fab fa-whatsapp"></i> Pedir ahora
+          </a>
+        </div>
+      </div>
+      
+      <!-- NUEVO ANUNCIO: POLERA CAP DEP AÑO BERLIN - 55 SOLES -->
+      <div class="card">
+        <div class="card-image">
+          <!-- IMAGEN TEMPORAL: El usuario pondrá la foto (png, jpg, etc.) -->
+          <img src="paño.jpg" alt="Polera Cap Dep Año Berlin">
+          <div class="card-overlay">
+            <button class="btn-overlay" data-product="polera-cap-dep">Ver detalles</button>
+          </div>
+        </div>
+        <div class="card-content">
+          <h3> Capa de  paño Berlin</h3>
+          <p class="card-description">ccapa de alta calidad <strong>Capa de paño Berlin</strong>. Buen material y acabado superior.</p>
+          <div class="card-price">
+            <span class="price">S/ 55.00</span>
+            <span class="price-note">variedad de colores</span>
+          </div>
+          <a href="https://wa.me/51940699545?text=Hola,%20estoy%20interesado%20en%20la%20POLERA%20CAP%20DEP%20AÑO%20BERLIN%20(S/55)" target="_blank" class="btn-card">
+            <i class="fab fa-whatsapp"></i> Pedir ahora
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="catalogo-cta fade-in">
+      <p>¿Necesitas algo diferente? ¡Podemos personalizarlo!</p>
+      <a href="#contacto" class="btn-primary">Solicitar cotización personalizada</a>
+    </div>
+  </section>
+
+  <!-- Contacto - CORREGIDO Y MEJORADO -->
+  <section id="contacto" class="contacto">
+    <div class="section-header slide-in-right">
+      <h2>Contáct<span class="resaltado">anos</span></h2>
+      <p class="section-subtitle">Estamos listos para hacer realidad tu diseño</p>
+    </div>
+    
+    <div class="contacto-content">
+      <div class="contacto-info slide-in-left">
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fas fa-phone-alt"></i>
+          </div>
+          <div class="contact-details">
+            <h3>Teléfono / WhatsApp</h3>
+            <p><a href="tel:+51940699545">940 699 545</a></p>
+            <p class="contact-note">Atendemos de lunes a sábado de 9:00 AM a 7:00 PM</p>
+          </div>
+        </div>
+        
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="contact-details">
+            <h3>Email</h3>
+            <p><a href="mailto:dianestampadosdtf@gmail.com">dianestampadosdtf@gmail.com</a></p>
+            <p class="contact-note">Respondemos en menos de 24 horas</p>
+          </div>
+        </div>
+        
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fab fa-instagram"></i>
+          </div>
+          <div class="contact-details">
+            <h3>Instagram</h3>
+            <p><a href="https://instagram.com/dian_estampados" target="_blank">@dian_estampados</a></p>
+            <p class="contact-note">Síguenos para ver nuestros últimos trabajos</p>
+          </div>
+        </div>
+        
+        <div class="contact-social">
+          <p>Síguenos en nuestras redes sociales:</p>
+          <div class="social-icons">
+            <a href="https://instagram.com/dian_estampados" target="_blank" aria-label="Instagram">
+              <i class="fab fa-instagram"></i> @dian_estampados
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61579314076255" target="_blank" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i> DIAN estampados y DTF
+            </a>
+            <a href="https://www.tiktok.com/@dian_estampados1" target="_blank" aria-label="TikTok">
+              <i class="fab fa-tiktok"></i> @dian_estampados1
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="contact-form slide-in-right">
+        <h3>Envíanos un mensaje</h3>
+        <form id="form-contacto">
+          <div class="form-group">
+            <label for="nombre">Nombre completo *</label>
+            <input type="text" id="nombre" name="nombre" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Correo electrónico *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="telefono">Teléfono / WhatsApp *</label>
+            <input type="tel" id="telefono" name="telefono" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="producto">Producto de interés</label>
+            <select id="producto" name="producto">
+              <option value="">Selecciona una opción</option>
+              <option value="polo-20-1">Polo 20/1 personalizado (S/30)</option>
+              <option value="polo-30-1">Polo 30/1 personalizado (S/25)</option>
+              <option value="polo-body-simple">Polo Body Simple sublimado (S/8)</option>
+              <option value="polera">Polera personalizada (S/45)</option>
+              <option value="polera-cap-dep">Polera Cap Dep Año Berlin (S/55)</option>
+              <option value="otro">Otro producto / Consulta</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="mensaje">Describe tu idea o diseño *</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Ej: Necesito 10 polos 20/1 con el logo de mi empresa en pecho y espalda..."></textarea>
+          </div>
+          
+          <button type="submit" class="btn-primary">
+            <i class="fas fa-paper-plane"></i> Enviar mensaje
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp flotante -->
+  <a href="https://wa.me/51940699545" target="_blank" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Footer - SIN HTML -->
+  <footer class="fade-in">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <h2>DIAN</h2>
+        <p>Estampados y DTF</p>
+      </div>
+      
+      <div class="footer-links">
+        <h3>Enlaces rápidos</h3>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-contact">
+        <h3>Contacto</h3>
+        <p><i class="fas fa-phone"></i> 940 699 545</p>
+        <p><i class="fas fa-envelope"></i> dianestampadosdtf@gmail.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Lima, Perú</p>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>© 2025 DIAN Estampados y DTF - Todos los derechos reservados</p>
+      <p class="footer-note">Diseñado con ❤️ para emprendedores creativos</p>
+    </div>
+  </footer>
+
+  <script>
+    // Script para menú móvil
+    document.addEventListener('DOMContentLoaded', function() {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navMenu = document.querySelector('.nav-menu');
+      
+      if (menuToggle) {
+        menuToggle.addEventListener('click', function() {
+          navMenu.classList.toggle('active');
+        });
+      }
+
+      // Cerrar menú al hacer clic en un enlace
+      const navLinks = document.querySelectorAll('.nav-link');
+      navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          navMenu.classList.remove('active');
+        });
+      });
+
+      // Smooth scroll para todos los enlaces internos
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
